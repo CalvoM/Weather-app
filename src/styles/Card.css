@@ -1,0 +1,22 @@
+.Card{
+    width:9%;
+    padding: 1em;
+    text-align: center;
+    margin:0 5%;
+    font-family: 'Sulphur Point',sans-serif;
+    border:none;
+    background-color: transparent;
+    outline:none!important;
+}
+.Card:focus{
+    border:1px solid #eee;
+    outline:none!important;
+    background:#eee;
+}
+.Day{
+    color:rgb(121, 48, 115);
+}
+.TempLow{
+    color:#999;
+    margin-left:10%;
+}

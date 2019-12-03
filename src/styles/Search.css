@@ -1,0 +1,22 @@
+.Search{
+    font-family: 'Sulphur Point',sans-serif;
+    margin:auto;
+    background-color: rgb(230, 190, 248);
+    padding:1em;
+    margin-bottom: 0.4em;
+    text-align: center;
+}
+.Search input{
+    font-family: 'Sulphur Point',sans-serif;
+    width:30%;
+    margin:auto;
+    border-radius: 0;
+    padding:0.5em;
+    border:none;
+}
+input[type='submit']{
+    margin-left:2em;
+    width:10%;
+    background-color: rgb(15, 141, 15);
+    color:white;
+}

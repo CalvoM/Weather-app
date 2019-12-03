@@ -1,0 +1,13 @@
+.Slider{
+    width:96%;
+    margin:0 auto;
+    padding:0.5em;
+    border:2px solid #eee;
+    display:flex;
+    text-align:center;
+    margin-top:0.3em;
+    font-family: 'Sulphur Point',sans-serif;
+}
+.cityTag{
+    color:#777;    
+}
