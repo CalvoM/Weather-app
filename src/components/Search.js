@@ -12,7 +12,7 @@ class Search extends React.Component{
         return(
             <div className="Search">
                 <input type="text" placeholder="City name" value={this.props.city} onChange={this.handleSearchEntry}/>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" onClick={this.props.submitSearch}/>
             </div>
         );
     }
