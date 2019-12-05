@@ -8,12 +8,12 @@ class Slider extends React.Component{
     render(){
         return(
             <div className="Slider">
-    <div className="cityTag">{this.props.cityName}, {this.props.cityDetails.city.country}</div>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                < Card />
+    <div className="cityTag">{this.props.cityName},
+    <span className="countryTag">{this.props.cityDetails.city.country}</span>
+    </div>
+            {(this.props.cityDetails.list.length/8)
+            }
+                <Card />               
             </div>
         );
     }

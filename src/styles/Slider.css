@@ -11,3 +11,7 @@
 .cityTag{
     color:#777;    
 }
+.countryTag{
+    letter-spacing: 4px;
+    color:rgb(74, 74, 230);
+}
