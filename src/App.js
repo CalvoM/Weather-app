@@ -9,8 +9,8 @@ class App extends React.Component{
         super(props)
         this.state={
             citySearched:"",
-            citySearchedInfo:{},
-            citySearchedList:[]
+            citySearchedList:[],
+            cityInfoList:[]
         };
         this.filterCitySearch = this.filterCitySearch.bind(this);
         this.getCityInfo = this.getCityInfo.bind(this);
@@ -28,7 +28,7 @@ class App extends React.Component{
                     let isCityShown = this.state.citySearchedList.find(function(city){return city===city_name})
                     if(!isCityShown){
                         this.state.citySearchedList.push(city_name);
-                        this.setState({citySearchedInfo:data.data});
+                        this.state.cityInfoList.push(data.data);
                     }
                     else{
                         alert('City details already shown!');
@@ -41,8 +41,8 @@ class App extends React.Component{
         return (
             <div className="App">
                 <Search city={this.state.citySearched} onSearchEntryChange={this.filterCitySearch} submitSearch={this.getCityInfo}/>
-                {this.state.citySearchedList.map((city)=>
-                    <Slider cityName={city} key={city} cityDetails={this.state.citySearchedInfo}/>
+                {this.state.cityInfoList.map((city)=>
+                    <Slider cityName={city.city.name} key={city.city.name} cityDetails={city}/>
                 )}
             </div>
         
